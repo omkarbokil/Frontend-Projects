@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+}
+
+*::-webkit-scrollbar{
+     width: 0;
+}
+
+
+body{
+     background-color: black;
+     /* overflow: hidden; */
+     font-family: Jost;
+}
+
+.container-1{
+     display: grid;
+     grid-template-columns: 300px auto;
+     gap: 0.5rem;
+     height: 100vh;
+     transition: all 0.2s ease-in-out;
+}
+
+nav{
+     color: #B3B3B3;
+}
+
+.nav-top-part, .nav-bottom-part{
+     background-color: #121212;
+     /* border-radius: 10px ; */
+}
+
+.nav-bottom-part{
+     height: 70vh;
+}
+
+.side-nav-menu{
+     color: #B3B3B3;
+     transition: all 0.2s ease-in-out
+}
+
+.side-nav-menu:hover{
+     color: white;
+     transition: all 0.2s ease-in-out
+}
+
+/* --------------------------------Navbar Bottom Part */
+.playlist-images{
+     width: 45px;
+     height: 45px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url("/Files/Spotify/spotify-playlist-1.png");
+     /* background-size: contain; */
+}
+
+.playlist-images:hover{
+     cursor: pointer;
+}
+
+.icon{
+     font-size: 30px;
+     color: #B3B3B3;
+     transition: all 0.2s ease-in-out
+}
+
+.icon:hover{
+     color: white;
+     cursor: pointer;
+     transition: all 0.2s ease-in-out
+}
+
+
+.playlist-btn{
+     background-color: #232323;
+     transition: all 0.2s ease-in-out
+}
+
+.playlist-imgs{
+     transition: all 0.2s ease-in-out
+}
+
+.playlist-btn:hover{
+     background-color: #2A2A2A;
+     transition: all 0.2s ease-in-out
+}
+
+.playlist-add:hover, .playlist-arrow:hover, .playlist-search:hover{
+     background-color: #1A1A1A;
+}
+
+.recent-text{
+     margin-right: 1.9rem;
+     font-size: 14px;
+}
+
+#recent-icon{
+     font-size: 18px;
+}
+
+.recents:hover .recent-text,
+.recents:hover #recent-icon{
+     transform: scale(1.07);
+}
+
+.recents:hover{
+     color: white;
+}
+
+.nav-bottom-part::-webkit-scrollbar{
+     width: 0;
+}
+
+/* ----------------------Conatiner 2 */
+.container-2{
+     background-image: linear-gradient(to bottom, #252525, #121212);
+     height: 87vh;
+}
+
+.back-arrow, .forward-arrow{
+     color: #B3B3B3;
+     background-color: #121212;
+}
+
+/* .install-icon, .bell-icon{
+     font-size: 18px;
+     color:white;
+} */
+
+.install, .bell, .user{
+     font-size: 16px;
+     color:white;
+     background-color: #121212;
+}
+
+.bell, .user{
+     color: #B3B3B3;
+}
+
+.explore-premium{
+     font-size: 16px;
+}
+
+.bell, .user{
+     padding-inline: 9px;
+     padding-block: 8px;
+}
+
+.install:hover, .explore-premium:hover{
+     transform: scale(1.05);
+}
+
+.bell:hover, .user:hover{
+     transform: scale(1.1);
+     color: white;
+}
+
+/* --------------------Category Buttons */
+.all-category, .music-category, .podcasts-category{
+     background-color: #2A2A2A;
+     transition: all 0.2s ease-in-out;
+}
+
+.all-category:hover,
+.music-category:hover, 
+.podcasts-category:hover{
+     background-color: #373636;
+     transition: all 0.2s ease-in-out
+}
+
+.hh{
+     position: sticky;
+     top: 0.01rem;
+     background-image: linear-gradient(to bottom, #252525, );
+}
+
+
+@media (max-width : 768px) {
+     .explore-premium, .back-forward-arrows{
+          display :none;
+     }
+}
+
+@media (max-width : 576px) {
+     .install{
+          display :none;
+     }
+}
+
+.card{
+     background-color: #181818;
+     transition: all 0.3s ease-in-out;
+     /* margin-right: 10rem; */
+}
+
+.card:hover{
+     background-color: #373636;
+     transition: all 0.3s ease-in-out
+}
+
+.card-imgs{
+     height: 180px;
+}
+
+.card-img-top{
+     border-radius: 20px;
+     padding: 1rem 1rem 1rem 1rem;
+     
+}
+
+.card-title{
+     margin-top: -1rem;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+
+.card-text{
+     font-size: 14px;
+}
+
+a{
+     text-decoration: none;
+     color: #B3B3B3;
+}
+
+a:hover{
+     text-decoration: underline;
+}
+
+/* ----------------------Album */
+.card:hover .album-play-icon{
+     /* top : 62%; */
+     right: 14%;
+     bottom: 15%;
+     background-color: #1ED760;
+     color: black;
+     padding-inline: 17px;
+     padding-block: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50px;
+     animation-name: album;
+     animation-duration: 0.2s;
+     animation-fill-mode: forwards;
+     /* animation-delay: 1s; */
+     box-shadow: 0px 2px 10px 0px black;
+}
+
+.album-play-icon{
+     display: none;
+}
+
+@keyframes album {
+     from{
+          bottom: 10%;
+     }
+     to{
+          top : 59%;
+     }
+}
