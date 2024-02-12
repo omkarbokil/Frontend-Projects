@@ -20,7 +20,7 @@ body{
      display: grid;
      grid-template-columns: 300px auto;
      gap: 0.5rem;
-     height: 100vh;
+     /* height: 100vh; */
      transition: all 0.2s ease-in-out;
 }
 
@@ -262,4 +262,12 @@ a:hover{
      to{
           top : 59%;
      }
+}
+
+.ok{
+     border-radius: 10px;
+}
+
+.btnss{
+     font-size: 45px;
 }

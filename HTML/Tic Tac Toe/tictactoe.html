@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tic Tac Toe</title>
+     <link rel="stylesheet" href="/CSS/Tic Tac Toe/tictactoe.css">
+</head>
+<body>
+     <section class="sect">
+          <h1><span class="red">T</span>ic <span class="blue">T</span>ac <span class="red">T</span>oe<h1>
+     </section>
+     <section class="turn">
+     </section>
+     <section class="main">
+          <section class="game">
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+               <button class="xo"></button>
+          </section>
+          <section class="scoreboard">
+               <div class="score-items" id="item-1">Scoreboard</div>
+               <div class="score-items" id="item-2">X</div>
+               <div class="score-items" id="item-3">O</div>
+               <div class="score-items" id="item-4">0</div>
+               <div class="score-items" id="item-5">0</div>
+          </section>
+          <section class="rounds">
+               <div class="round-items" id="round-title">Select Rounds</div>
+               <div class="round-items" id="round-1">3 Rounds</div>
+               <div class="round-items" id="round-2">5 Rounds</div>
+               <div class="round-items" id="round-3">10 Rounds</div>
+               <div class="round-items" id="round-4">
+                    Rounds Remaining
+                    <p id="round-count"></p>
+               </div>
+          </section>
+          <section class="win">
+     
+          </section>
+          <section class="reset-newgame">
+               <button name="reset" class="rn" id="reset">Reset</button>
+               <button name="newgame" class="rn" id="newgame">New Game</button>
+          </section>
+          <section class="win-modal">
+               <p class="win-modal-text">
+                    <span class="rounds-msg"></span>
+                    <span class="score-msg">
+                         <span class="score-msg-template" id="score-msg-title">Score</span>
+                         <span class="score-msg-template" id="score-player1">X</span>
+                         <span class="score-msg-template" id="score-player2">O</span>
+                         <span class="score-msg-template" id="score-player1-score"></span>
+                         <span class="score-msg-template" id="score-player2-score"></span>
+                    </span>
+                    <span class="winner-msg"></span>
+               </p>
+               <button name="resume-playing" class="resume-playing" id="resume">Close and Play</button>
+          </section>
+     </section>
+     <script src="/JS/Tic Tac Toe/tictactoe.js"></script>
+</body>
+</html>
