@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Roboto+Mono&family=Rubik&family=Space+Grotesk&family=Work+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+     width: 8px;
+     height: 5px;
+ }
+  
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: #E3E6E6;
+     margin: 2.5rem;
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: #acacac;
+     border-radius: 0px;
+ }
+  
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #484848;
+ }
+
+/* .offe::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -14.5px;
+    height: 28px;
+    width: 10px;
+    border-top: 28px solid #CC0C39;
+    border-right: 15px solid transparent;
+} */

@@ -185,13 +185,14 @@ round3.addEventListener("click", () =>{
 })
 
 // Setting text and background to selected box
-boxes.forEach((box) => {
+boxes.forEach((box, b, c) => {
      box.addEventListener("click", () => {
           if(turn){
                box.innerText = 'O';
                box.style.backgroundColor = "rgb(255, 0, 0)";
                turn = false;
                checkturn(turn);
+               console.log(box, b, c);
           }
           else{
                box.innerText = 'X'

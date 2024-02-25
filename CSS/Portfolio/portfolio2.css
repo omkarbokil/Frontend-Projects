@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Roboto+Mono&family=Rubik&family=Space+Grotesk&family=Work+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
