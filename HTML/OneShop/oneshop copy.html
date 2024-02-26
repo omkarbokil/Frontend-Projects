@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>One Shop</title>
+     <link rel="stylesheet" href="/CSS/OneShop/o-oneshop.css">
+     <script src="https://kit.fontawesome.com/95749087e1.js" crossorigin="anonymous"></script>
+</head>
+<body class="overflow-x-hidden font-figtree">
+     <nav class="bg-[#ffffff] flex justify-around items-center flex-wrap p-5 sticky top-[0.1px] shadow-lg z-50">
+          <section class="w-40 text-center">
+               <h1 class="text-xl font-extrabold tracking-wider">
+                    <span class="text-[#FFBD59]">O</span>NE <span class="text-[#FFBD59]">S</span>HOP
+               </h1>
+               <h2 class="text-sm tracking-wider">
+                    shop all at one stop
+               </h2>
+          </section>
+          <section class="w-[50%] flex items-center relative">
+               <input type="search" placeholder="Serach Anything" class="w-[100%] p-2 border-2 rounded-lg outline-none placeholder:italic placeholder:text-slate-400">
+               <i class="fa-solid fa-magnifying-glass absolute right-3 p-3 bg-[#ffffff] text-[#484848]"></i>
+          </section>
+          <ul class="flex flex-wrap gap-5 justify-center">
+               <!-- <li class="cursor-pointer relative
+               after:content-[''] after:w-0 after:bg-[#484848] after:bottom-0 after:left-0
+               after:h-[4px] after:absolute after:hover:animate-nav">
+                    Home
+               </li> -->
+               <li class="cursor-pointer hover:bg-black/10 rounded-full py-1 px-3">Home</li>
+               <li class="cursor-pointer hover:bg-black/10 rounded-full py-1 px-3">Offers</li>
+               <li class="cursor-pointer hover:bg-black/10 rounded-full py-1 px-3">Returns</li>
+               <li class="cursor-pointer hover:bg-black/10 rounded-full py-1 px-3">Profile</li>
+          </ul>
+     </nav>
+     <section class="bg-[#ffffff]">
+          <section class="overflow-auto flex max-h-[500px] p-10 gap-10">
+               <img src="/Files/Portfolio/banner-1.jpg" alt="" width="500px" class="w-[1450px] object-cover rounded-lg">
+               <img src="/Files/Portfolio/banner-1.jpg" alt="" width="500px" class="w-[1450px] object-cover rounded-lg">
+               <img src="/Files/Portfolio/banner-1.jpg" alt="" width="500px" class="w-[1450px] object-cover rounded-lg">
+               <img src="/Files/Portfolio/banner-1.jpg" alt="" width="500px" class="w-[1450px] object-cover rounded-lg">
+               <img src="/Files/Portfolio/banner-1.jpg" alt="" width="500px" class="w-[1450px] object-cover rounded-lg">
+          </section>
+     </section>
+     <!--Todays Deals -->
+     <section class="bg-[#ffffff] mx-44 border-green-500">
+          <section class="px-10 pt-10 pb-5 text-2xl font-bold text-[#484848]">
+               Today's Deals
+          </section>
+          <section class="grid px-10 pb-10 grid-cols-5 gap-8 overflow-auto">
+               <!-- First Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover shadow-md border relative item-1">
+                    <div class="grid place-items-center text-center">
+                         <img src="/Files/OneShop/smartwatch1.jpg" alt="" class="object-contain h-60 pt-5 px-10 rounded-t-lg bg-[#ffffff] border-b">
+                         <div class="p-2 text-sm overflow-hidden text-ellipsis space-y-1">
+                              <h1 class="font-bold text-[#484848]">
+                                   beatXP Marv Raze
+                              </h1>
+                              <h1>₹1,099 M.R.P : <span class="line-through text-sm">₹4,999</span></h1>
+                         </div>
+                         <div class="bg-[#CC0C39] font-bold top-2 left-50 absolute py-2 px-3 text-sm text-white rounded-full">
+                              Flat 78% Off
+                         </div>
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/smartwatch1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">beatXP Marv Raze</h1>
+                              <h2 class="text-2xl p-2">₹1,099</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 78% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Second Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/smartwatch2.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              boAt Xtend Smart Watch
+                         </span><br>
+                         <span>₹1,996 M.R.P : </span><span class="line-through text-sm">₹7,990</span><br>
+                         <span class="text-sm">(75% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 75% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/smartwatch2.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">boAt Xtend Smart Watch</h1>
+                              <h2 class="text-2xl p-2">₹1,996</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 75% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Third Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              Monitoradldifyfgadsifyasdhgfliysdfhjvsyuidhkfgvblisdkfb
+                         </span><br>
+                         <span>₹20,000 M.R.P : </span><span class="line-through text-sm">₹40,000</span><br>
+                         <span class="text-sm">(50% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 50% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">Monitor</h1>
+                              <h2 class="text-2xl p-2">₹20,000</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 50% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Fourth Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/mobile1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              iQOO Neo9 Pro 5G
+                         </span><br>
+                         <span>₹36,999 M.R.P : </span><span class="line-through text-sm">₹41,999</span><br>
+                         <span class="text-sm">(12% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 12% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/mobile1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">iQOO Neo9 Pro 5G</h1>
+                              <h2 class="text-2xl p-2">₹36,999</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 12% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Fifth Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/bag.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              WENGER Laptop Backpack
+                         </span><br>
+                         <span>₹6,000 M.R.P : </span><span class="line-through text-sm">₹7,500</span><br>
+                         <span class="text-sm">(20% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 20% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/bag.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">WENGER Laptop Backpack</h1>
+                              <h2 class="text-2xl p-2">₹6,000</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 20% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Sixth Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/bag.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              WENGER Laptop Backpack
+                         </span><br>
+                         <span>₹6,000 M.R.P : </span><span class="line-through text-sm">₹7,500</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 12% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/smartwatch1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">beatXP Marv Raze</h1>
+                              <h2 class="text-2xl p-2">₹1,099</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 78% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Seventh Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/bag.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              WENGER Laptop Backpack
+                         </span><br>
+                         <span>₹6,000 M.R.P : </span><span class="line-through text-sm">₹7,500</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 12% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/smartwatch1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">beatXP Marv Raze</h1>
+                              <h2 class="text-2xl p-2">₹1,099</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 78% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+               <!-- Eighth Item -->
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg relative item-1">
+                    <img src="/Files/OneShop/bag.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff] border-b">
+                    <div class="p-2 text-sm overflow-hidden text-ellipsis text-nowrap">
+                         <span class="font-bold text-[#484848]">
+                              WENGER Laptop Backpack
+                         </span><br>
+                         <span>₹6,000 M.R.P : </span><span class="line-through text-sm">₹7,500</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+                    <div class="bg-[#CC0C39] font-bold top-2 left-0 absolute py-2 px-3 text-sm text-white rounded-r-full">
+                         Flat 12% Off
+                    </div>
+                    <div class="h-auto min-w-[450px] rounded-lg bg-cover shadow-lg grid grid-cols-2 hidden absolute top-0 left-0 z-20 bg-white item-card-1">
+                         <div>
+                              <img src="/Files/OneShop/smartwatch1.jpg" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                         </div>
+                         <div class="p-5 font-bold text-[#484848]">
+                              <h1 class="text-xl p-2">beatXP Marv Raze</h1>
+                              <h2 class="text-2xl p-2">₹1,099</h2>
+                              <h3 class="text-[#CC0C39] text-left py-3 px-3 text-md">
+                                   Flat 78% Off
+                              </h3>
+                         </div>
+                         <div class="p-2 col-span-2">
+                              <h3 class="bg-[#FFBD59] text-2xl font-bold text-center py-4 px-3 text-md text-white rounded-full hover:cursor-pointer">
+                                   Buy Now
+                              </h3>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </section>
+     <!--Electronics Items -->
+     <section class="bg-[#ffffff]">
+          <section class="px-10 pt-10 pb-5 text-2xl font-bold text-[#484848]">
+               Electronics
+          </section>
+          <section class="grid px-10 pb-10 grid-flow-col gap-8 overflow-auto">
+               <div class="h-auto min-w-52 rounded-lg bg-cover shadow-lg bg-white border">
+                    <img src="/Files/OneShop/watch.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+               <div class="h-auto min-w-52 rounded-lg bg-cover border shadow-lg">
+                    <img src="/Files/OneShop/monitor.png" alt="" class="object-contain h-60 p-5 rounded-t-lg bg-[#ffffff]">
+                    <div class="p-2 border text-md">
+                         <span class="font-bold text-[#484848]">Smart Watch</span><br>
+                         <span>₹1,299 M.R.P : </span><span class="line-through text-sm">₹4,999</span><br>
+                         <span class="text-sm">(74% off)</span>
+                    </div>
+               </div>
+          </section>
+     </section>
+     <footer class="h-80 border-t mt-10">
+          <section class="grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-8 mt-10 pt-10 px-5">
+               <section class="sm:col-span-4">
+                    <h1 class="text-5xl font-extrabold text-black/10 sm:text-9xl">
+                         ONE SHOP
+                    </h1>
+               </section>
+               <section>
+                    <ul class="space-y-2">
+                         <li class="text-black/50 font-bold text-md">Account</li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Profile</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Orders</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Returns</a></li>
+                    </ul>
+               </section>
+               <section>
+                    <ul class="space-y-2">
+                         <li class="text-black/50 font-bold text-md">Get To Know Us</li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">About Us</a></li>
+                    </ul>
+               </section>
+               <section>
+                    <ul class="space-y-2">
+                         <li class="text-black/50 font-bold text-md">Connect With Us</li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">X</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Facebook</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Instagram</a></li>
+                    </ul>
+               </section>
+               <section>
+                    <ul class="space-y-2">
+                         <li class="text-black/50 font-bold text-md">Let Us Help you</li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Privacy Policy</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Guidelines</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Return Centre</a></li>
+                         <li class="text-black/50 cursor-pointer hover:underline text-sm"><a href="">Help</a></li>
+                    </ul>
+               </section>
+          </section>
+          <section class="justify-center flex mt-5">
+               <a href="">
+                    <i class="fa-solid fa-angle-up p-3 border rounded-full text-black/50 hover:cursor-pointer"></i>
+               </a>
+          </section>
+     </footer>
+     <script src="/JS/OneShop/oneshop.js"></script>
+</body>
+</html>

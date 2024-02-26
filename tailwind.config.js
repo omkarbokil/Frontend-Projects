@@ -4,12 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'arimo': ['Arimo'],
-        'rubik': ['Rubik'],
-        'robotomono': ['Roboto Mono'],
-        'figtree': ['Figtree'],
-        'spacegrotesk': ['Space Grotesk'],
-        'worksans': ['Work Sans'],
+        'arimo'         : ['Arimo'],
+        'rubik'         : ['Rubik'],
+        'robotomono'    : ['Roboto Mono'],
+        'roboto'        : ['Roboto'],
+        'figtree'       : ['Figtree'],
+        'spacegrotesk'  : ['Space Grotesk'],
+        'worksans'      : ['Work Sans'],
+        'leaguespartan' : ['League Spartan'],
+        'raleway'       : ['Raleway'],
+        'expletussans'  : ['Expletus Sans']
       },
 
       animation: {

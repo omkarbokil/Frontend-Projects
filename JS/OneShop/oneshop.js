@@ -1,5 +1,6 @@
 let itemOne = document.querySelectorAll(".item-1");
 let itemCard1 = document.querySelectorAll(".item-card-1");
+let buyNow = document.querySelectorAll(".buy-now");
 
 // itemOne.addEventListener("mouseover", () => {
 //      itemCard1.classList.remove("hidden");
@@ -11,15 +12,27 @@ let itemCard1 = document.querySelectorAll(".item-card-1");
 //      itemCard1.classList.remove("hidden");
 // })
 
+// itemOne.forEach((val, ind) => {
+//      val.addEventListener("mouseover", () => {
+//           itemCard1[ind].classList.remove("hidden");
+//      })
+// })
+
+// itemOne.forEach((val, ind) => {
+//      val.addEventListener("mouseout", () => {
+//           itemCard1[ind].classList.add("hidden");
+//      })
+// })
+
 itemOne.forEach((val, ind) => {
-     val.addEventListener("mouseover", () => {
-          itemCard1[ind].classList.remove("hidden");
+     val.addEventListener("mouseenter", () => {
+          buyNow[ind].classList.remove("hidden");
      })
 })
 
 itemOne.forEach((val, ind) => {
-     val.addEventListener("mouseout", () => {
-          itemCard1[ind].classList.add("hidden");
+     val.addEventListener("mouseleave", () => {
+          buyNow[ind].classList.add("hidden");
      })
 })
 
