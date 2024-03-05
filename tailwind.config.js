@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./HTML/**/*.html"],
-  content: ["./OneShop/**/*.html"],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       fontFamily:{
