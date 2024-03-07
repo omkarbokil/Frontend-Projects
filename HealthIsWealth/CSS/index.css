@@ -18,6 +18,38 @@ body{
      font-size: 4rem;
 }
 
+.nav-items:hover{
+     color: white;
+}
+
+.read-info{
+     background-color: rgb(0 0 0 / 0.5);
+     font-size: 0.8rem;
+     bottom: 1rem;
+}
+
+.read-more{
+     right: 0;
+     bottom: 0;
+     background-color: rgb(0 0 0 / 0.5);
+     font-size: 0.8rem;
+}
+
+
+.modal-hd{
+     background-color: #5D9332;
+}
+
+/* .modal-bd{
+     background-color: #ffffff;
+} */
+
+.modal-bd-title{
+     color: #5D9332;
+}
+
+/* Media Queries */
+
 @media(max-width : 420px){
      .tagline{
           font-size: 2rem;
