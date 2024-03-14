@@ -2,6 +2,7 @@
 
 body{
      font-family: Montserrat;
+     overflow-x: hidden;
 }
 
 .navbar{
@@ -46,6 +47,35 @@ body{
 
 .modal-bd-title{
      color: #5D9332;
+}
+
+.fa-bell:hover{
+     box-shadow: 0px 1px 5px 1px rgb(149, 147, 147);
+}
+
+.btn_get_in_touch{
+     background-color: #5D9332;
+}
+
+.btn_get_in_touch:hover{
+     background-color: #285804;
+     /* font-weight: bold; */
+}
+
+/* Protein Chart */
+.protein-product{
+     background-color: #5D9332;
+}
+
+.footer_links{
+     color: white;
+     text-decoration: none;
+     font-size: 0.9rem;
+}
+
+.footer_links:hover{
+     color: white;
+     text-decoration: underline;
 }
 
 /* Media Queries */
