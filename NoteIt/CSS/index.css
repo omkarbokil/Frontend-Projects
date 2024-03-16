@@ -39,6 +39,12 @@ body{
      transition: 0.2s all ease-in-out;
 }
 
+.add_note:focus{
+     background-color: #086EC0;
+     color: white;
+     transition: 0.2s all ease-in-out;
+}
+
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
      color: #BEBFBF;
 }
@@ -66,4 +72,59 @@ body{
 
 .btn-close{
      color: red;
+}
+
+textarea {
+     width: 250px;
+     height: 250px;
+     margin : 0.5rem;
+     border: 1px solid #5F6368;
+     background-color: #202020;
+     border-radius: 8px;
+     resize: none;
+     font-size: 16px;
+     color: white;
+     outline: none;
+     padding: 1rem;
+}
+
+textarea:focus {
+     border-color: white;
+}
+
+.user_img{
+     border-radius: 50%;
+}
+
+.note_modal_content{
+     background-color: #202020;
+     border: 0.5px solid #5F6368;
+}
+
+.input_fields{
+     background-color: #202020;
+     border: 1px solid #5F6368;
+     /* color: white; */
+}
+
+.input_fields:focus{
+     background-color: #202020;
+     color: white;
+     outline: none;
+     border-color: white;
+}
+
+label{
+     color: white;
+}
+
+.signup_btn{
+     background-color: #086EC0;
+     transition: 0.2s all ease-in-out;
+}
+
+.signup_btn:hover{
+     background-color: #086EC0;
+     transform: translateX(5px);
+     transition: 0.2s all ease-in-out;
 }
