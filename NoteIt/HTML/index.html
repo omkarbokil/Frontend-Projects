@@ -78,7 +78,7 @@
                <h5 class="offcanvas-title" id="offcanvasTopLabel">
                     Profile
                </h5>
-               <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
                <img src="/Portfolio/Material/user-img.jpg" alt="" width="100px" class="user_img me-3">
@@ -90,22 +90,29 @@
 
      <!-- Note Modal -->
      <div class="modal" tabindex="-1" id="exampleModal">
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                <div class="modal-content note_modal_content">
+                    <div class="p-2 d-flex justify-content-end">
+                         <button type="button" class="btn-close p-2 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body d-flex justify-content-center">
-                         <div class="m-4">
-                              <form class="row g-3 needs-validation">
+                         <div class="mx-3 mb-3">
+                              <form class="row g-3 needs-validation" onsubmit="return false">
                                    <div>
                                         <label for="noteTitle" class="form-label">Title</label>
-                                        <input type="text" class="form-control shadow-none text-white input_fields" id="noteTitle" placeholder="Enter Title" required>
+                                        <input type="text" class="form-control shadow-none text-white input_fields" id="noteTitle" placeholder="Enter Title" autofocus>
                                    </div>
                                    <div>
                                         <label for="noteMessage" class="form-label">Note</label>
-                                        <textarea type="textarea" class="form-control shadow-none m-0 text-white input_fields" id="noteMessage" placeholder="Type Here" required style="height: 200px"></textarea>
+                                        <textarea type="textarea" class="form-control shadow-none m-0 text-white input_fields" id="noteMessage" placeholder="Type Here" style="height: 150px"></textarea>
                                    </div>
-                                   <div class="col-12 d-flex justify-content-end">
-                                        <a class="btn w-25 signup_btn text-white" data-bs-dismiss="modal" aria-label="Close">
-                                        Add Note</a>
+                                   <div class="col-12 d-flex justify-content-between align-items-center">
+                                        <div class="empty_message text-danger">
+                                             
+                                        </div>
+                                        <button class="btn w-25 add_note_content text-white" type="submit" id="liveToastBtn">
+                                             Add Note
+                                        </button>
                                    </div>
                               </form>
                          </div>
@@ -114,16 +121,25 @@
           </div>
         </div>
      <!-- Content -->
-          <div class="container-fluid mt-4 text-white" style="height: 80vh;">
+          <div class="container-fluid mt-4 text-white" style="height: 10vh;">
                <div class="parent d-flex flex-wrap align-items-center justify-content-center p-3">
 
                </div>
           </div>
 
-          <section class="okay">
-               <h1>KSVDDCFIUVSDUOFV</h1>
-               <p>Hi There</p>
-          </section>
-     <script src="/NoteIt/JS/index.js"></script>
-</body>
-</html>
+          <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+               <div id="liveToast" class="toast toasts" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex align-items-center justify-content-between">
+                         <div class="toast-body text-white overflow-hidden text-truncate text-nowrap">
+                              <span class="fw-bold" id="note_name"></span> note added
+                         </div>
+                         <button type="button" class="btn-close p-2 me-2 shadow-none" data-bs-dismiss="toast" aria-label="Close">
+                         </button>
+                    </div>
+               </div>
+          </div>
+          <script src="/NoteIt/JS/index.js"></script>
+     </body>
+     </html>

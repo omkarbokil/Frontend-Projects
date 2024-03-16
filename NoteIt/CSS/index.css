@@ -5,6 +5,7 @@ body{
      font-family: Raleway;
 }
 
+/* Navbar */
 .logo{
      color: #086EC0;
 }
@@ -23,6 +24,7 @@ body{
      color: #BEBFBF;
 }
 
+/* Add Note Button */
 .add_note{
      background-color: #525355;
      height: 40px;
@@ -45,10 +47,6 @@ body{
      transition: 0.2s all ease-in-out;
 }
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-     color: #BEBFBF;
-}
-
 .user_profile, .menu_logo{
      color: #939394;
      transition: 0.2s all ease-in-out;
@@ -59,46 +57,26 @@ body{
      color: #086EC0;
 }
 
+
+/* Navbar Menu Logos */
 .menu_logo:hover{
      background-color: #313236;
      color: white;
      transition: 0.2s all ease-in-out;
 }
 
+/* User Profile Section */
 .profile{
      background-color: #202020;
      color: white;
-}
-
-.btn-close{
-     color: red;
-}
-
-textarea {
-     width: 250px;
-     height: 250px;
-     margin : 0.5rem;
-     border: 1px solid #5F6368;
-     background-color: #202020;
-     border-radius: 8px;
-     resize: none;
-     font-size: 16px;
-     color: white;
-     outline: none;
-     padding: 1rem;
-}
-
-textarea:focus {
-     border-color: white;
 }
 
 .user_img{
      border-radius: 50%;
 }
 
-.note_modal_content{
-     background-color: #202020;
-     border: 0.5px solid #5F6368;
+.btn-close{
+     color: red;
 }
 
 .input_fields{
@@ -114,17 +92,114 @@ textarea:focus {
      border-color: white;
 }
 
-label{
-     color: white;
-}
-
-.signup_btn{
+/* Add Note Popup Button */
+.add_note_content{
      background-color: #086EC0;
      transition: 0.2s all ease-in-out;
 }
 
-.signup_btn:hover{
+.add_note_content:hover{
      background-color: #086EC0;
      transform: translateX(5px);
      transition: 0.2s all ease-in-out;
 }
+
+/* Note related */
+.note_modal_content, .toasts{ /* Note Popup Modal Dialog Box*/
+     background-color: #202020;
+     border: 0.5px solid #5F6368;
+}
+
+#noteMessage{
+     resize: none;
+}
+
+.note_display{ /* Notes display(title and content) after addition of Notes from Popup dialog box*/
+     color: white;
+     width: 250px;
+     height: 250px;
+     margin : 0.5rem;
+     border: 1px solid #5F6368;
+     background-color: #202020;
+     border-radius: 8px;
+     resize: none;
+     font-size: 16px;
+     outline: none;
+     padding: 1rem;
+}
+
+#note_title{
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     text-wrap: nowrap;
+}
+
+#note_content, .toast-body{
+     display: -webkit-box;
+     -webkit-line-clamp: 1;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+
+/* Common elemet styling */
+/* Form Control */
+.form-control::placeholder {
+     color: #BEBFBF;
+}
+
+/* Labels */
+label{
+     color: white;
+}
+
+/* Close Button */
+.btn-close{
+     background-color: #5F6368;
+     border-radius: 50%;
+     font-size: 10px;
+}
+
+/* Horizontal Rule */
+hr{
+     margin: 0 0 1rem 0;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+     width: 8px;
+ }
+  
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: #202020;
+     margin: 0.5rem;
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: #5F6368;
+     border-radius: 50px;
+ }
+  
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #acacac;
+ }
+
+/* --------------------------------------------------------------------- */
+/* textarea {
+     width: 150px;
+     height: 150px;
+     border: 1px solid #5F6368;
+     background-color: #202020;
+     border-radius: 8px;
+     resize: none;
+     font-size: 16px;
+     color: white;
+     outline: none;
+     padding: 1rem;
+     border: none;
+} */

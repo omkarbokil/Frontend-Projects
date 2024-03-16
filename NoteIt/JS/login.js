@@ -44,13 +44,11 @@ viewPassword.forEach((val, ind) => {
           if(checkViewCount == true){
                passwords[ind].type = 'text';
                checkViewCount = false;
-               console.log(checkViewCount);
                viewPasswordIcon[ind].innerText = 'visibility_off';
           }
           else{
                passwords[ind].type = 'password';
                checkViewCount = true;
-               console.log(checkViewCount);
                viewPasswordIcon[ind].innerText = 'visibility';
           }
      
