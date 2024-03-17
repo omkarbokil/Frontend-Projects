@@ -4,6 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Note It - Tasks, Todos and Privacy</title>
+     <link rel="shortcut icon" href="/NoteIt/Material/NoteIt-logo.png" type="image/x-icon">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/95749087e1.js" crossorigin="anonymous"></script>
@@ -35,7 +36,7 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                          <li class="nav-item">
-                              <a class="nav-link active text-white" aria-current="page" href="#">
+                              <a class="nav-link active text-white" aria-current="page" href="/NoteIt/HTML/index.html">
                                    <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Notes" data-bs-placement="bottom">
                                         format_quote
                                    </span>
@@ -50,7 +51,7 @@
                          </li>
                          <li class="nav-item">
                               <a class="nav-link active text-white" aria-current="page" href="#">
-                                   <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Calculator" data-bs-placement="bottom">
+                                   <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Calculator" data-bs-placement="bottom" id="calc_icon">
                                         calculate
                                    </span>
                               </a>
@@ -129,6 +130,14 @@
 
           <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
 
+          <!-- Calculator -->
+          <div class="shadow px-2 py-2 text-white position-absolute" id="calculator">
+               <div class="d-flex justify-content-end" id="calculatorheader">
+                    <button type="button" class="btn-close p-1 shadow-none" data-bs-dismiss="calculator" aria-label="Close" style="font-size: 10px;"></button>
+               </div>
+          </div>
+
+          <!-- Toast Design -->
           <div class="toast-container position-fixed bottom-0 end-0 p-3">
                <div id="liveToast" class="toast toasts" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="d-flex align-items-center justify-content-between">

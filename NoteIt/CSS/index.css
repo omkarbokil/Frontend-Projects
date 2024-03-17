@@ -143,6 +143,17 @@ body{
      text-overflow: ellipsis;
 }
 
+/* Calculator */
+#calculator{
+     height: 50vh;
+     width: 20vw;
+     bottom : 1rem;
+     right: 1rem;
+     border-radius: 10px;
+     border: 1px solid #5F6368;
+     background-color: #202020;
+}
+
 /* Common elemet styling */
 /* Form Control */
 .form-control::placeholder {
