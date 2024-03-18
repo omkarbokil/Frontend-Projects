@@ -142,3 +142,11 @@ calculatorButtons.forEach((val) => {
                calcDisp.innerText = calcDispData + val.innerText;
      })
 })
+
+// Password Vault
+// let lockIcon        =    document.querySelector("#lock_icon");
+// let passwordVault   =    document.querySelector("#password_vault");
+
+// lockIcon.addEventListener("click", () => {
+//      passwordVault.classList.remove("d-none");
+// })
