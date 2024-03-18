@@ -129,13 +129,20 @@ body{
 }
 
 #note_title{
-     white-space: nowrap;
      overflow: hidden;
      text-overflow: ellipsis;
      text-wrap: nowrap;
 }
 
-#note_content, .toast-body{
+#note_content{
+     display: -webkit-box;
+     -webkit-line-clamp: 7;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+
+.toast-body{
      display: -webkit-box;
      -webkit-line-clamp: 1;
      -webkit-box-orient: vertical;
@@ -145,13 +152,26 @@ body{
 
 /* Calculator */
 #calculator{
-     height: 50vh;
-     width: 20vw;
+     height: 23.5rem;
+     width: 19rem;
      bottom : 1rem;
      right: 1rem;
      border-radius: 10px;
      border: 1px solid #5F6368;
      background-color: #202020;
+}
+
+.calc_disp{
+     height: 4.5rem;
+     font-family: Figtree;
+}
+
+.calculator_buttons{
+     border: 1px solid #5F6368;
+}
+
+.calculator_buttons:hover{
+     background-color: #086EC0;
 }
 
 /* Common elemet styling */
@@ -181,6 +201,7 @@ hr{
 /* width */
 ::-webkit-scrollbar {
      width: 8px;
+     height: 5px;
  }
   
  /* Track */

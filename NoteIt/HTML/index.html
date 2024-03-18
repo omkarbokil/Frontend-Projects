@@ -51,7 +51,7 @@
                          </li>
                          <li class="nav-item">
                               <a class="nav-link active text-white" aria-current="page" href="#">
-                                   <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Calculator" data-bs-placement="bottom" id="calc_icon">
+                                   <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Calculator" data-bs-placement="bottom" id="calculate_icon">
                                         calculate
                                    </span>
                               </a>
@@ -131,9 +131,99 @@
           <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
 
           <!-- Calculator -->
-          <div class="shadow px-2 py-2 text-white position-absolute" id="calculator">
+          <div class="shadow px-3 py-2 text-white position-absolute" id="calculator">
                <div class="d-flex justify-content-end" id="calculatorheader">
-                    <button type="button" class="btn-close p-1 shadow-none" data-bs-dismiss="calculator" aria-label="Close" style="font-size: 10px;"></button>
+                    <button type="button" class="btn-close p-1 shadow-none close_button" aria-label="Close" style="font-size: 10px;"></button>
+               </div>
+               <div class="rounded-2 d-flex align-items-end justify-content-start calc_disp fs-2 overflow-auto">
+                    <!-- innerText from JS -->
+               </div>
+               <hr>
+               <div class="row g-1 text-center">
+                    <div class="col-3">
+                         <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_clear">
+                              C
+                         </div>
+                    </div>
+                    <div class="col-3">
+                         <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_add">
+                              +
+                         </div>
+                    </div>
+                    <div class="col-3">
+                         <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_sub">
+                              -
+                         </div>
+                    </div>
+                    <div class="col-3">
+                         <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_mul">
+                              x
+                         </div>
+                    </div>
+               </div>
+               <div class="mt-1">
+                    <div class="row g-1 text-center">
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_7">
+                                   7
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_8">
+                                   8
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_9">
+                                   9
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_per">
+                                   %
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_4">
+                                   4
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_5">
+                                   5
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_6">
+                                   6
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_div">
+                                   /
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_1">
+                                   1
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_2">
+                                   2
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_3">
+                                   3
+                              </div>
+                         </div>
+                         <div class="col-3">
+                              <div class="p-3 rounded-2 calculator_buttons" role="button" id="calc_btn_equal">
+                                   =
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
 
