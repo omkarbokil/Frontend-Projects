@@ -12,20 +12,25 @@
      <link rel="stylesheet" href="/NoteIt/CSS/index.css">
 </head>
      <body>
+          <!-- Navbar -->
           <nav class="navbar navbar-expand-lg px-3">
                <div class="container-fluid">
+                    <!-- Logo -->
                     <a class="navbar-brand me-5" href="/NoteIt/HTML/index.html">
                          <span class="text-white">Note It</span>
                          <span class="material-symbols-outlined logo">
                               format_quote
                          </span>
                     </a>
+                    <!-- Collapsible Menu -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Srach Bar -->
                     <form class="d-flex" role="search">
                          <input class="form-control shadow-none me-2 search_bar" type="search" placeholder="Search" aria-label="Search">
                     </form>
+                    <!-- Add New Note Button -->
                     <span class="me-5" data-bs-toggle="tooltip" data-bs-title="Add New Note" data-bs-placement="bottom">
                          <button type="button" name="add_note" class="btn d-flex align-items-center add_note shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
                               <span class="material-symbols-outlined fs-2">
@@ -33,8 +38,10 @@
                               </span>
                          </button>
                     </span>
+                    <!-- Navigation Menu Options -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav">
+                              <!-- Home -->
                               <li class="nav-item">
                                    <a class="nav-link active text-white" aria-current="page" href="/NoteIt/HTML/index.html">
                                         <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Notes" data-bs-placement="bottom">
@@ -42,6 +49,7 @@
                                         </span>
                                    </a>
                               </li>
+                              <!-- Todos -->
                               <li class="nav-item">
                                    <a class="nav-link active text-white" aria-current="page" href="#">
                                         <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Todos" data-bs-placement="bottom">
@@ -49,6 +57,7 @@
                                         </span>
                                    </a>
                               </li>
+                              <!-- Calculator -->
                               <li class="nav-item">
                                    <a class="nav-link active text-white" aria-current="page" href="#">
                                         <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Calculator" data-bs-placement="bottom" id="calculate_icon">
@@ -56,17 +65,20 @@
                                         </span>
                                    </a>
                               </li>
+                              <!-- Private Vault -->
                               <li class="nav-item">
                                    <a class="nav-link active text-white" aria-current="page" href="#">
-                                        <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="modal" data-bs-target="#passwordVaultModal" id="lock_icon">
-                                             lock
+                                        <span data-bs-toggle="modal" data-bs-target="#passwordVaultModal">
+                                             <span class="material-symbols-outlined p-3 rounded-5 menu_logo" data-bs-toggle="tooltip" data-bs-title="Private Vault" data-bs-placement="bottom"  id="lock_icon">
+                                                  lock
+                                             </span>
                                         </span>
                                    </a>
                               </li>
                          </ul>
                     </div>
+                    <!-- Profile -->
                     <div class="d-flex">
-                         <!-- <i class="fa-brands fa-suse user_profile fs-2" ></i> -->
                          <span class="material-symbols-outlined user_profile fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" role="button">
                               account_circle
                          </span>
@@ -74,6 +86,7 @@
                </div>
           </nav>
 
+          <!-- Profile Section -->
           <div class="offcanvas offcanvas-top profile px-5" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasTopLabel">
@@ -89,7 +102,7 @@
                </div>
           </div>
 
-          <!-- Note Modal -->
+          <!-- Add New Note Modal -->
           <div class="modal" tabindex="-1" id="exampleModal">
                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content note_modal_content">
@@ -120,8 +133,9 @@
                          </div>
                     </div>
                </div>
-             </div>
-          <!-- Content -->
+          </div>
+
+          <!-- Notes DisplayContent -->
           <div class="container-fluid mt-4 text-white" style="height: 10vh;">
                <div class="parent d-flex flex-wrap align-items-center justify-content-center p-3">
 
@@ -129,7 +143,7 @@
           </div>
 
           <!-- Calculator -->
-          <div class="shadow px-3 py-2 text-white position-absolute d-none" id="calculator">
+          <div class="shadow px-3 py-2 text-white position-absolute" id="calculator">
                     <div class="d-flex justify-content-end" id="calculatorheader">
                          <button type="button" class="btn-close p-1 shadow-none close_button" aria-label="Close" style="font-size: 10px;"></button>
                     </div>
@@ -236,11 +250,11 @@
                                              lock
                                         </span>
                                         <h1 class="pv_title">
-                                             Password Vault
+                                             Private Vault
                                         </h1>
                                    </div>
                                    <div class="row mt-5 justify-content-center">
-                                        <button type="button" class="btn w-50 text-white rounded-5 d-flex align-items-center justify-content-center get_started_btn">
+                                        <button type="button" class="btn w-75 text-white rounded-5 d-flex align-items-center justify-content-center get_started_btn">
                                              Get Started
                                              <span class="material-symbols-outlined ms-2 get_started_icon">
                                                   navigate_next
