@@ -83,12 +83,12 @@ addNoteContent.addEventListener("click", () =>{
      
           noteModal.innerHTML = `
           <section class="note_display">
-                    <h4 id="note_title">${titles}</h4>
-                    <hr>
-                    <div id="note_content">
-                    ${messages}
-                    </div>
-               </section>
+               <h4 id="note_title">${titles}</h4>
+               <hr>
+               <div id="note_content">
+                     ${messages}
+               </div>
+          </section>
           `;
      
           parent.insertBefore(noteModal, parent.childNodes[0]);
@@ -107,25 +107,36 @@ addNoteContent.addEventListener("click", () =>{
 })
 
 // Calculator
-let calculateIcon   =    document.querySelector("#calculate_icon");
-let calculator      =    document.querySelector("#calculator");
-let calcDisp        =    document.querySelector(".calc_disp");
-let calcBtnClear    =    document.querySelector("#calc_btn_clear");
-let one             =    document.querySelector("#calc_btn_1");
-let two             =    document.querySelector("#calc_btn_2");
-let three           =    document.querySelector("#calc_btn_3");
-let four            =    document.querySelector("#calc_btn_4");
-let five            =    document.querySelector("#calc_btn_5");
-let calculatorButtons    =    document.querySelectorAll(".calculator_buttons")
+let calculateIcon        =    document.querySelector("#calculate_icon");
+let calculator           =    document.querySelector("#calculator");
+let calcDisp             =    document.querySelector(".calc_disp");
+let calcBtnClear         =    document.querySelector("#calc_btn_clear");
+let one                  =    document.querySelector("#calc_btn_1");
+let two                  =    document.querySelector("#calc_btn_2");
+let three                =    document.querySelector("#calc_btn_3");
+let four                 =    document.querySelector("#calc_btn_4");
+let five                 =    document.querySelector("#calc_btn_5");
+let calculatorButtons    =    document.querySelectorAll(".calculator_buttons");
+let calculatorFlag       =    true;
 
 // When clicking on Calculator Icon Menu
 calculateIcon.addEventListener("click", ()=> {
-     calculator.classList.remove("d-none");
+     if(calculatorFlag == true){
+          calculator.classList.remove("d-none");
+          calculatorFlag = false;
+          console.log(calculatorFlag);
+     }
+     else{
+          calculator.classList.add("d-none");
+          calculatorFlag = true;
+          console.log(calculatorFlag);
+     }
 })
 
 // When clikcing on Calculator close button
 closeButton.addEventListener("click", ()=> {
      calculator.classList.add("d-none");
+     calculatorFlag = true;
 })
 
 // When clicking Clear button
