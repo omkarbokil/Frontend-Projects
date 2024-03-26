@@ -41,7 +41,20 @@ body{
      background-color: #373636;
 }
 
+.generated_usernames{
+     background-color: #232323;
+}
+
+.generated_usernames:hover{
+     background-color: #373636;
+}
+
 /* Hashtags */
 .hashtags{
+     background-color: #1c1b1b;
+}
+
+.hashtags:hover{
      background-color: #232323;
+     background: linear-gradient(to right, #9C3398, #D92E55);
 }
