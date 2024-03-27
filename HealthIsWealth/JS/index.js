@@ -2,6 +2,10 @@ let vegetableCard = document.querySelectorAll(".vegetable-card");
 let readInfo = document.querySelectorAll(".read-info");
 let notificationBell = document.querySelector("#notification-bell");
 
+// Bootstrap Tooltip JS
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 vegetableCard.forEach((val,ind) => {
      val.addEventListener("mouseenter", () => {
           readInfo[ind].classList.remove("visually-hidden")
@@ -22,7 +26,7 @@ const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
      const wrapper = document.createElement('div')
   wrapper.innerHTML = [
-    `<div class="alert alert-${type}2 d-flex gap-3 align-items-center" role="alert">`,
+    `<div class="alert alert-${type} d-flex gap-3 align-items-center" role="alert">`,
     '<span class="material-symbols-rounded" style="color:blue">water_drop</span>',
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',

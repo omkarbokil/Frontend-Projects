@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="/HealthIsWealth/CSS/index.css">
 </head>
 <body>
+     <!-- Navbar -->
      <section class="navbar-expand shadow navbar ps-3 d-flex justify-content-between">
           <div class="fw-medium fs-5 text-white" onclick="location.href='/HealthIsWealth/HTML/index.html'" role="button">
                <i class="fa-brands fa-envira"></i>
@@ -25,19 +26,32 @@
                </li>
           </ul>
      </section>
-     <div class="position-absolute p-3">
-          <div>
-               <i class="fa-regular fa-bell border p-3 rounded-5 position-relative" style="color:#00b4d8;" role="button" id="notification-bell" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"></i>
-               <div id="liveAlertPlaceholder" class="position-absolute top-0 start-100 p-2" style="text-wrap: nowrap;">
-
-               </div>
-          </div>
-     </div>
-     <section class="container content mt-5 px-3 p-sm-0">
-          <div class="fw-bold tagline" style="color:#5D9332;">
+     
+     <!-- Content -->
+     <div class="container flex-wrap d-flex align-items-center mt-4 gap-4">
+          <div class="fw-bold tagline me-auto" style="color:#5D9332;">
                Are you prioritising your Health ?
           </div>
+          <!-- Reminder -->
+          <div>
+               <span class="material-symbols-rounded p-3 rounded-5 border" role="button" id="reminder" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Paani pi le Bhai !!">
+                    water_drop
+               </span>
+          </div>
+          <!-- Notification -->
+          <div>
+               <button type="button" class="btn border position-relative notifications">
+                    Notifications
+                    <span class="badge bg-danger rounded-circle position-absolute start-100 translate-middle p-2">
+                    </span>
+               </button>
+          </div>
+     </div>
+     
+     <!-- Do This and Eat This Content -->
+     <section class="container content mt-3 px-3 p-sm-0">
           <div class="row mt-2 px-3 p-sm-0 g-3">
+               <!-- Do This -->
                <i>Do This</i>
                <div class="col-12 col-lg-6">
                     <div class="rounded-2 border p-3 shadow-sm">
@@ -125,6 +139,7 @@
           </div>
 
           <div class="row mt-2 px-3 p-sm-0 g-3">
+               <!-- Eat This -->
                <i>Eat This</i>
                <div class="col-12 col-lg-6">
                     <div class="rounded-2 border p-3 shadow-sm">
@@ -211,15 +226,14 @@
                </div>
           </div>
      </section>
-          <!-- Read More Modal -->
-          <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     
+     <!-- Read More Modal -->
+     <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                          <div class="modal-header modal-hd">
                               <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">More Info</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-
-                              </button>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                          </div>
                          <div class="modal-body modal-bd">
                               <div>
@@ -241,197 +255,222 @@
                                         The soluble fiber in carrots has been shown to help regulate blood sugar and insulin levels after eating. Raw or slightly cooked carrots are also low on the glycemic index, which helps them provide a steady energy supply.
                                    </p>
                               </div>
-                              <div class="mt-4">
-                                   <h4 class="modal-bd-title">They Might Lower Cancer Risk</h4>
-                                   <p>
-                                        The potassium in carrots plays a key role in regulating blood pressure. This mineral balances sodium levels and helps sweep excess sodium and fluid out of the body, which takes the pressure off the heart. This also makes carrots a good choice if you want to de-bloat after consuming too much salty food.
-                                   </p>
-                                   <p>
-                                        Research from a 2020 meta-analysis published in the Journal of the American Heart Association found that carrots, among a few other fruits and vegetables, had some of the greatest benefits on cardiovascular health.
-                                   </p>
-                              </div>
-                              <div class="mt-4">
-                                   <h4 class="modal-bd-title">They May Reduce the Risk of Heart Disease</h4>
-                                   <p>
-                                        One review article published in the journal Foods in 2019 reported that the phenolic compounds in carrots have the potential to reduce cardiovascular diseases. These compounds have antioxidant properties, which also help maintain normal blood sugar and cholesterol levels.
-                                   </p>
-                              </div>
-                              <div class="mt-4">
-                                   <h4 class="modal-bd-title">Carrots Support Your Immunity</h4>
-                                   <p>
-                                        The 2019 article published in Foods also mentioned two vitamins in carrots that are beneficial to the immune system: vitamin C and vitamin A. The vitamin C in carrots helps keep your immune system healthy.
-                                   </p>
-                                   <p>
-                                        Vitamin A supports the immune system by playing an important role in forming and protecting mucous membranes. Mucous membranes act as barriers to keep germs out of the body. They make up the lining of the respiratory, digestive, and urogenital tracts. 
-                                   </p>
-                              </div>
+                         </div>
+                    </div>
+               </div>
+     </div>
+
+     <!-- Protein Chart -->
+     <section class="container mt-5">
+          <table class="table table-hover border rounded-4 shadow-sm">
+               <thead>
+                    <tr>
+                         <th scope="col">Sr</th>
+                         <th scope="col">Product</th>
+                         <th scope="col">Size</th>
+                         <th scope="col">Protein(grams)</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th colspan="4" style="background-color: #5D9332;" class="text-white">Vegetables</th>
+                    </tr>
+                    <tr>
+                         <td scope="row">1</td>
+                         <td>Brussels Sprouts, boiled</td>
+                         <td>1/4 cup</td>
+                         <td>1</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">2</td>
+                         <td>Broccoli</td>
+                         <td>1/4 cup</td>
+                         <td>0.6</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">3</td>
+                         <td>Cauliflower</td>
+                         <td>1/4 cup</td>
+                         <td>0.5</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">4</td>
+                         <td>Carrots, raw</td>
+                         <td>1/4 cup</td>
+                         <td>0.3</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">5</td>
+                         <td>Corn, canned, drained </td>
+                         <td>1/4 cup</td>
+                         <td>1.1</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">6</td>
+                         <td>Garlic, raw</td>
+                         <td>1 teaspoon</td>
+                         <td>0.2</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">7</td>
+                         <td>Sweet Potato, without skin, boiled</td>
+                         <td>1/4 cup</td>
+                         <td>1.1</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">8</td>
+                         <td>Cucumber, with peel,raw</td>
+                         <td>1/4 cup / slices</td>
+                         <td>0.2</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">9</td>
+                         <td>Tomato</td>
+                         <td>1/4 cup/6.3oz</td>
+                         <td>0.4</td>
+                    </tr>
+                    <tr>
+                         <td scope="row">10</td>
+                         <td>Zucchini, raw,with skin</td>
+                         <td>1/4 cup</td>
+                         <td>0.3</td>
+                    </tr>
+               </tbody>
+          </table>
+     </section>
+
+     <!-- Articles and Magazines -->
+     <section class="container mt-5">
+          <legend style="color: #5D9332;">Articles</legend>
+          <section class="d-flex gap-5">
+               <div class="card" style="width: 15rem; background-color: #4361ee;">
+                    <img src="/HealthIsWealth/Material/Water.png" alt="" class="card-img-top">
+                    <div class="card-body text-center text-white">
+                         <div class="card-title">
+                              <h4>Stay Hydrated</h4>
+                         </div>
+                         <p class="card-text">
+                              Simple Ways to Keep Your Body Watered
+                         </p>
+                         <span class="material-symbols-rounded p-3 rounded-5 border article_arrow shadow" role="button">
+                              arrow_forward
+                         </span>
+                    </div>
+               </div>
+               <div class="card bg-success" style="width: 15rem;">
+                    <img src="/HealthIsWealth/Material/Water.png" alt="" class="card-img-top">
+                    <div class="card-body text-center text-white">
+                         <div class="card-title">
+                              <h4>Leafy Greens</h4>
+                         </div>
+                         <p class="card-text">
+                              Your Secret Weapon for a Healthier You
+                         </p>
+                         <span class="material-symbols-rounded p-3 rounded-5 border article_arrow shadow" role="button">
+                              arrow_forward
+                         </span>
+                    </div>
+               </div>
+               <div class="card bg-warning" style="width: 15rem;">
+                    <img src="/HealthIsWealth/Material/Water.png" alt="" class="card-img-top">
+                    <div class="card-body text-center text-white">
+                         <div class="card-title">
+                              <h4>Veggie Vitality</h4>
+                         </div>
+                         <p class="card-text">
+                              Vitamin-Packed Vegetables
+                         </p>
+                         <span class="material-symbols-rounded p-3 rounded-5 border article_arrow shadow" role="button">
+                              arrow_forward
+                         </span>
+                    </div>
+               </div>
+          </section>
+     </section>
+
+     <!-- FAQ -->
+     <section class="container mt-5" style="margin-bottom: 10rem;">
+          <legend style="color: #5D9332;">Frequently Asked Questions (FAQ)</legend>
+          <div class="accordion accordion-flush" id="accord">
+               <div class="accordion-item shadow rounded-3">
+                    <div class="accordion-header">
+                         <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#oneBody" aria-expanded="false" aria-controls="oneBody" style="color: #5D9332;">
+                              How to stop craving Junk Food ?
+                         </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="oneBody" data-bs-parent="#accord">
+                         <div class="accordion-body">
+                              <strong style="color: #5D9332;">Distract yourself</strong><br> Cravings last anywhere from 5-20 minutes, so get involved in some activity. Listen to your favourite music, strike up a conversation with a friend or workmate, do some chores or go for a run. Anything to get your mind off the craving.
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item shadow rounded-3 mt-3">
+                    <div class="accordion-header">
+                         <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#twoBody" aria-expanded="false" aria-controls="twoBody" style="color: #5D9332;">
+                              How to do transition to a healthier diet and avoid foods like pizza and burgers ?
+                         </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="twoBody" data-bs-parent="#accord">
+                         <div class="accordion-body">
+                              To start a healthier diet and avoid pizza and burgers, plan meals with whole foods, cook at home, control portions, stay hydrated, and choose
+                              <span>
+                                   <a href="https://www.amazon.in/s?k=healthy+snacks&ref=nb_sb_noss" target="_blank" >healthy snacks.</a>
+                              </span> Limit processed foods, seek support, and practice moderation with treats. Patience and small sustainable changes are crucial for success in adopting healthier eating habits.
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item shadow rounded-3 mt-3">
+                    <div class="accordion-header">
+                         <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#threeBody" aria-expanded="false" aria-controls="threeBody" style="color: #5D9332;">
+                              How to start a healthy diet ?
+                         </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="threeBody" data-bs-parent="#accord">
+                         <div class="accordion-body">
+                              To kickstart a healthy diet, start by setting clear, realistic goals. Assess your current eating habits and make small changes gradually. Focus on incorporating more whole foods like
+                              <span>
+                                   <a href="https://blinkit.com/cn/fresh-fruits/cid/1487/1503" target="_blank" >fruits</a>
+                              </span>,
+                              <span>
+                                   <a href="https://blinkit.com/cn/fresh-vegetables/cid/1487/1489" target="_blank" >vegetables</a>
+                              </span> and
+                              <span>
+                                   <a href="https://blinkit.com/cn/millet-other-flours/cid/16/48" target="_blank" >whole grains</a>
+                              </span>
+                              </span> into your meals.
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item shadow rounded-3 mt-3">
+                    <div class="accordion-header">
+                         <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#fourBody" aria-expanded="false" aria-controls="fourBody" style="color: #5D9332;">
+                              How to avoid eating junk food when our friends are enjoying it in front of us ?
+                         </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="fourBody" data-bs-parent="#accord">
+                         <div class="accordion-body">
+                              When you're in a situation where friends are indulging in junk food, it can be challenging to stick to your healthy eating goals. To resist temptation, consider eating a nutritious snack before meeting up. Communicate your health objectives to your friends; they may offer support. Opt for healthier choices if dining out and keep yourself occupied with conversation or activities to distract from the junk food. Bringing your own healthy snacks is another option. If you do decide to indulge, do so mindfully, savoring each bite. Lastly, remind yourself of the reasons why you're pursuing a healthier diet to stay motivated and focused on your goals.
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item shadow rounded-3 mt-3">
+                    <div class="accordion-header">
+                         <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#fiveBody" aria-expanded="false" aria-controls="fiveBody" style="color: #5D9332;">
+                              How long does it typically take to establish healthier dietary habits ?
+                         </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="fiveBody" data-bs-parent="#accord">
+                         <div class="accordion-body">
+                              The time it takes to build healthier dietary habits can vary greatly from person to person and depends on factors such as individual preferences, lifestyle, motivation, and the extent of changes being made. Generally, forming new habits, including dietary ones, is thought to take around 21 to 66 days, according to various studies and theories on habit formation.<br>
+                              It's important to approach the process of developing healthier dietary habits with patience, persistence, and a focus on gradual, sustainable changes rather than seeking rapid results. Additionally, seeking support from friends, family, or healthcare professionals can be beneficial in staying motivated and accountable during the journey toward better nutrition.
                          </div>
                     </div>
                </div>
           </div>
+     </section>
 
-          <!-- Protein Chart -->
-          <section class="container mt-5">
-               <table class="table table-hover border rounded-4 shadow-sm">
-                    <thead>
-                         <tr>
-                              <th scope="col">Sr</th>
-                              <th scope="col">Product</th>
-                              <th scope="col">Size</th>
-                              <th scope="col">Protein(grams)</th>
-                         </tr>
-                    </thead>
-                    <tbody>
-                         <tr>
-                              <th colspan="4" style="background-color: #5D9332;" class="text-white">Vegetables</th>
-                         </tr>
-                         <tr>
-                              <td scope="row">1</td>
-                              <td>Brussels Sprouts, boiled</td>
-                              <td>1/4 cup</td>
-                              <td>1</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">2</td>
-                              <td>Broccoli</td>
-                              <td>1/4 cup</td>
-                              <td>0.6</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">3</td>
-                              <td>Cauliflower</td>
-                              <td>1/4 cup</td>
-                              <td>0.5</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">4</td>
-                              <td>Carrots, raw</td>
-                              <td>1/4 cup</td>
-                              <td>0.3</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">5</td>
-                              <td>Corn, canned, drained </td>
-                              <td>1/4 cup</td>
-                              <td>1.1</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">6</td>
-                              <td>Garlic, raw</td>
-                              <td>1 teaspoon</td>
-                              <td>0.2</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">7</td>
-                              <td>Sweet Potato, without skin, boiled</td>
-                              <td>1/4 cup</td>
-                              <td>1.1</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">8</td>
-                              <td>Cucumber, with peel,raw</td>
-                              <td>1/4 cup / slices</td>
-                              <td>0.2</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">9</td>
-                              <td>Tomato</td>
-                              <td>1/4 cup/6.3oz</td>
-                              <td>0.4</td>
-                         </tr>
-                         <tr>
-                              <td scope="row">10</td>
-                              <td>Zucchini, raw,with skin</td>
-                              <td>1/4 cup</td>
-                              <td>0.3</td>
-                         </tr>
-                    </tbody>
-               </table>
-          </section>
-
-          <!-- Accordion -->
-          <section class="container mt-5" style="margin-bottom: 10rem;">
-               <legend style="color: #5D9332;">Frequently Asked Questions (FAQ)</legend>
-               <div class="accordion accordion-flush" id="accord">
-                    <div class="accordion-item shadow rounded-3">
-                         <div class="accordion-header">
-                              <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#oneBody" aria-expanded="false" aria-controls="oneBody" style="color: #5D9332;">
-                                   How to stop craving Junk Food ?
-                              </button>
-                         </div>
-                         <div class="accordion-collapse collapse" id="oneBody" data-bs-parent="#accord">
-                              <div class="accordion-body">
-                                   <strong style="color: #5D9332;">Distract yourself</strong><br> Cravings last anywhere from 5-20 minutes, so get involved in some activity. Listen to your favourite music, strike up a conversation with a friend or workmate, do some chores or go for a run. Anything to get your mind off the craving.
-                              </div>
-                         </div>
-                    </div>
-                    <div class="accordion-item shadow rounded-3 mt-3">
-                         <div class="accordion-header">
-                              <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#twoBody" aria-expanded="false" aria-controls="twoBody" style="color: #5D9332;">
-                                   How to do transition to a healthier diet and avoid foods like pizza and burgers ?
-                              </button>
-                         </div>
-                         <div class="accordion-collapse collapse" id="twoBody" data-bs-parent="#accord">
-                              <div class="accordion-body">
-                                   To start a healthier diet and avoid pizza and burgers, plan meals with whole foods, cook at home, control portions, stay hydrated, and choose
-                                   <span>
-                                        <a href="https://www.amazon.in/s?k=healthy+snacks&ref=nb_sb_noss" target="_blank" >healthy snacks.</a>
-                                   </span> Limit processed foods, seek support, and practice moderation with treats. Patience and small sustainable changes are crucial for success in adopting healthier eating habits.
-                              </div>
-                         </div>
-                    </div>
-                    <div class="accordion-item shadow rounded-3 mt-3">
-                         <div class="accordion-header">
-                              <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#threeBody" aria-expanded="false" aria-controls="threeBody" style="color: #5D9332;">
-                                   How to start a healthy diet ?
-                              </button>
-                         </div>
-                         <div class="accordion-collapse collapse" id="threeBody" data-bs-parent="#accord">
-                              <div class="accordion-body">
-                                   To kickstart a healthy diet, start by setting clear, realistic goals. Assess your current eating habits and make small changes gradually. Focus on incorporating more whole foods like
-                                   <span>
-                                        <a href="https://blinkit.com/cn/fresh-fruits/cid/1487/1503" target="_blank" >fruits</a>
-                                   </span>,
-                                   <span>
-                                        <a href="https://blinkit.com/cn/fresh-vegetables/cid/1487/1489" target="_blank" >vegetables</a>
-                                   </span> and
-                                   <span>
-                                        <a href="https://blinkit.com/cn/millet-other-flours/cid/16/48" target="_blank" >whole grains</a>
-                                   </span>
-                                   </span> into your meals.
-                              </div>
-                         </div>
-                    </div>
-                    <div class="accordion-item shadow rounded-3 mt-3">
-                         <div class="accordion-header">
-                              <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#fourBody" aria-expanded="false" aria-controls="fourBody" style="color: #5D9332;">
-                                   How to avoid eating junk food when our friends are enjoying it in front of us ?
-                              </button>
-                         </div>
-                         <div class="accordion-collapse collapse" id="fourBody" data-bs-parent="#accord">
-                              <div class="accordion-body">
-                                   When you're in a situation where friends are indulging in junk food, it can be challenging to stick to your healthy eating goals. To resist temptation, consider eating a nutritious snack before meeting up. Communicate your health objectives to your friends; they may offer support. Opt for healthier choices if dining out and keep yourself occupied with conversation or activities to distract from the junk food. Bringing your own healthy snacks is another option. If you do decide to indulge, do so mindfully, savoring each bite. Lastly, remind yourself of the reasons why you're pursuing a healthier diet to stay motivated and focused on your goals.
-                              </div>
-                         </div>
-                    </div>
-                    <div class="accordion-item shadow rounded-3 mt-3">
-                         <div class="accordion-header">
-                              <button class="accordion-button collapsed shadow-none rounded-3 fw-bold" data-bs-toggle="collapse" data-bs-target="#fiveBody" aria-expanded="false" aria-controls="fiveBody" style="color: #5D9332;">
-                                   How long does it typically take to establish healthier dietary habits ?
-                              </button>
-                         </div>
-                         <div class="accordion-collapse collapse" id="fiveBody" data-bs-parent="#accord">
-                              <div class="accordion-body">
-                                   The time it takes to build healthier dietary habits can vary greatly from person to person and depends on factors such as individual preferences, lifestyle, motivation, and the extent of changes being made. Generally, forming new habits, including dietary ones, is thought to take around 21 to 66 days, according to various studies and theories on habit formation.<br>
-                                   It's important to approach the process of developing healthier dietary habits with patience, persistence, and a focus on gradual, sustainable changes rather than seeking rapid results. Additionally, seeking support from friends, family, or healthcare professionals can be beneficial in staying motivated and accountable during the journey toward better nutrition.
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </section>
-
-          <!-- Sign Up Modal -->
-          <div class="modal fade modal-md" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!-- Sign Up Modal -->
+     <div class="modal fade modal-md" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                          <div class="modal-header">
@@ -464,68 +503,69 @@
                          </div>
                     </div>
                </div>
-          </div>
+     </div>
 
-          <footer class="mt-5 position-relative p-5 d-sm-flex justify-content-between" style="min-height: 250px; background-color: #5D9332;">
-               <!-- Footer Logo -->
-               <div>
-                    <div class="text-white fs-1">
-                         <i class="fa-brands fa-envira"></i>
-                         Healthy Khaoo
+     <!-- Footer -->
+     <footer class="mt-5 position-relative p-5 d-sm-flex justify-content-between" style="min-height: 250px; background-color: #5D9332;">
+          <!-- Footer Logo -->
+          <div>
+               <div class="text-white fs-1">
+                    <i class="fa-brands fa-envira"></i>
+                    Healthy Khaoo
+               </div>
+          </div>
+          <!-- Footer Links -->
+          <div class="d-sm-flex">
+               <div class="text-white">
+                    <ul>
+                         <li class="list-group-item m-2 fw-bold fs-6">Connect</li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Contact us</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Instagram</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Twitter</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Facebook</a></li>
+                    </ul>
+               </div>
+               <div class="text-white">
+                    <ul>
+                         <li class="list-group-item m-2 fw-bold fs-6">Services</li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Account</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Articles</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Magazines</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Contribute</a></li>
+                    </ul>
+               </div>
+               <div class="text-white">
+                    <ul>
+                         <li class="list-group-item m-2 fw-bold fs-6">Get Help</li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Help</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">FAQ's</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Privacy Policy</a></li>
+                         <li class="list-group-item m-2"><a href="" class="footer_links">Terms of Use</a></li>
+                    </ul>
+               </div>
+          </div>
+          <!-- Lets Connect -->
+          <section class="d-md-flex position-absolute d-none" style="left: 35%; bottom: 30%;">
+               <div class="border px-5 py-4 rounded-3 bg-white text-center shadow" style="width: 30vw;">
+                    <div class="mb-5">
+                         <legend>Let's <span class="text-primary">Connect</span></legend>
+                    </div>
+                    <div class="form text-start">
+                         <div class="mb-3">
+                              <label for="name">Name</label>
+                              <input type="text" id="name" class="form-control" placeholder="Enter Name">
+                         </div>
+                         <div>
+                              <label for="email">Email</label>
+                              <input type="text" id="email" class="form-control" placeholder="Enter Email">
+                         </div>
+                         <button type="button" class="btn mt-4 w-100 text-white btn_get_in_touch">
+                              Connect
+                         </button>
                     </div>
                </div>
-               <!-- Footer Links -->
-               <div class="d-sm-flex">
-                    <div class="text-white">
-                         <ul>
-                              <li class="list-group-item m-2 fw-bold fs-6">Connect</li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Contact us</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Instagram</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Twitter</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Facebook</a></li>
-                         </ul>
-                    </div>
-                    <div class="text-white">
-                         <ul>
-                              <li class="list-group-item m-2 fw-bold fs-6">Services</li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Account</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Articles</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Magazines</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Contribute</a></li>
-                         </ul>
-                    </div>
-                    <div class="text-white">
-                         <ul>
-                              <li class="list-group-item m-2 fw-bold fs-6">Get Help</li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Help</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">FAQ's</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Privacy Policy</a></li>
-                              <li class="list-group-item m-2"><a href="" class="footer_links">Terms of Use</a></li>
-                         </ul>
-                    </div>
-               </div>
-               <!-- Lets Connect -->
-               <section class="d-md-flex position-absolute d-none" style="left: 35%; bottom: 30%;">
-                    <div class="border px-5 py-4 rounded-3 bg-white text-center shadow" style="width: 30vw;">
-                         <div class="mb-5">
-                              <legend>Let's <span class="text-primary">Connect</span></legend>
-                         </div>
-                         <div class="form text-start">
-                              <div class="mb-3">
-                                   <label for="name">Name</label>
-                                   <input type="text" id="name" class="form-control" placeholder="Enter Name">
-                              </div>
-                              <div>
-                                   <label for="email">Email</label>
-                                   <input type="text" id="email" class="form-control" placeholder="Enter Email">
-                              </div>
-                              <button type="button" class="btn mt-4 w-100 text-white btn_get_in_touch">
-                                   Connect
-                              </button>
-                         </div>
-                    </div>
-               </section>
-          </footer>
+          </section>
+     </footer>
      <script src="/HealthIsWealth/JS/index.js"></script>
 </body>
 </html>

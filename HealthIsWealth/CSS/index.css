@@ -16,7 +16,7 @@ body{
 }
 
 .tagline{
-     font-size: 4rem;
+     font-size: 3.5rem;
 }
 
 .nav-items:hover{
@@ -49,9 +49,17 @@ body{
      color: #5D9332;
 }
 
-.fa-bell:hover{
-     box-shadow: 0px 1px 5px 1px rgb(149, 147, 147);
+#reminder, .notifications{
+     color: #4361ee;
+     transition: 0.2s all ease-in-out;
 }
+
+#reminder:hover , .notifications:hover{
+     background-color: #4361ee;
+     color: white;
+     transition: 0.2s all ease-in-out;
+}
+
 
 .btn_get_in_touch{
      background-color: #5D9332;
@@ -60,6 +68,16 @@ body{
 .btn_get_in_touch:hover{
      background-color: #285804;
      /* font-weight: bold; */
+}
+
+/* Articles */
+.article_arrow{
+     color: white;
+}
+
+.article_arrow:hover{
+     color: #4361ee;
+     background-color: white;
 }
 
 /* Protein Chart */
