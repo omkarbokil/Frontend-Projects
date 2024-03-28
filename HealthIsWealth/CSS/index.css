@@ -73,11 +73,13 @@ body{
 /* Articles */
 .article_arrow{
      color: white;
+     transition: 0.2s all ease-in-out;
 }
 
 .article_arrow:hover{
      color: #4361ee;
      background-color: white;
+     transition: 0.2s all ease-in-out;
 }
 
 /* Protein Chart */
@@ -108,4 +110,13 @@ body{
      .tagline{
           font-size: 1rem;
      }
+}
+
+::-webkit-scrollbar{
+     height: 5px;
+     width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+     background-color: #5D9332;
 }
