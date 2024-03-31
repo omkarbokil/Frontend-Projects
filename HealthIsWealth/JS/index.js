@@ -18,9 +18,6 @@ vegetableCard.forEach((val,ind) => {
      })
 })
 
-notificationBell.addEventListener("click", () => {
-     console.log('Hello');
-})
 
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
@@ -42,3 +39,15 @@ if (alertTrigger) {
     appendAlert('Paani pi le bhai !!', 'primary')
   })
 }
+
+// Body and Weight Porportion
+let weightBtn = document.querySelector("#weight_btn");
+let weightCount = document.querySelectorAll(".weight_count");
+
+weightCount.forEach((val) => {
+     val.addEventListener("click", () => {
+          let selectedWeight = val.innerText;
+
+          weightBtn.innerText = selectedWeight;
+     })
+})
