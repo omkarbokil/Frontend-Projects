@@ -51,3 +51,36 @@ genderOptions.forEach((val) => {
           gender.innerText = selectedGender;
      })
 })
+
+// Calculate Water Intake
+let weight = document.querySelector("#weight");
+let checkWaterIntake = document.querySelector("#check-water-intake");
+let waterIntake = document.querySelector("#water-intake");
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+     'use strict'
+   
+     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+     const forms = document.querySelectorAll('.needs-validation')
+   
+     // Loop over them and prevent submission
+     Array.from(forms).forEach(form => {
+       form.addEventListener('submit', event => {
+         if (!form.checkValidity()) {
+           event.preventDefault()
+           event.stopPropagation()
+         }
+   
+         form.classList.add('was-validated')
+       }, false)
+     })
+   })()
+
+checkWaterIntake.addEventListener("click", () => {
+     if(weight.value !== null){
+          let result = weight.value * 0.03;
+
+          waterIntake.value = result;
+     }
+})

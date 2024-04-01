@@ -455,9 +455,9 @@
      <section class="container mt-5">
           <legend class="mb-3" style="color: #5D9332;">Weight and Water Proportion</legend>
           <section>
-               <form action="" class="row">
+               <form class="row needs-validation">
                     <div class="dropdown col-2">
-                         <label for="gender" required>Gender</label>
+                         <label for="gender" class="form-label" required>Gender</label>
                          <button class="btn border gender form-control text-start shadow-none" data-bs-toggle="dropdown">
                               Select Gender
                          </button>
@@ -468,18 +468,22 @@
                          </ul>
                     </div>
                     <div class="col-2">
-                         <label for="weight">Weight</label>
-                         <input type="number" class="form-control shadow-none" placeholder="Enter Weight">
+                         <label for="weight" class="form-label">Weight</label>
+                         <input type="number" class="form-control shadow-none" placeholder="Enter Weight" id="weight" required>
                     </div>
                     <div class="col-2">
-                         <label for="age">Age</label>
-                         <input type="number" class="form-control shadow-none" placeholder="Enter age">
+                         <label for="age"  class="form-label">Age</label>
+                         <input type="number" class="form-control shadow-none" placeholder="Enter age" id="age" required>
                     </div>
                     <div class="col-2">
-                         <label></label>
-                         <button class="btn btn-danger form-control">
+                         <label  class="form-label">&nbsp;</label>
+                         <div class="btn btn-danger form-control" id="check-water-intake" type="submit" role="button">
                               Check
-                         </button>
+                         </div>
+                    </div>
+                    <div class="col-4">
+                         <label for="water-intake" class="form-label">Water Intake (Ltrs)</label>
+                         <input type="text" class="form-control shadow-none" id="water-intake" disabled>
                     </div>
                </form>
           </section>
