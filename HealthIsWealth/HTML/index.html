@@ -342,7 +342,7 @@
 
      <!-- Articles and Magazines -->
      <section class="container mt-5">
-          <legend style="color: #5D9332;">Articles</legend>
+          <legend class="mb-3" style="color: #5D9332;">Articles</legend>
           <section class="row gap-5 flex-nowrap overflow-x-auto justify-content-start pb-3 px-3">
                <div class="card col-3" style="width: 15rem; background-color: #4361ee;">
                     <div class="card-body text-center text-white">
@@ -453,16 +453,33 @@
 
      <!-- Articles and Magazines -->
      <section class="container mt-5">
-          <legend style="color: #5D9332;">Water and Body Proportion</legend>
+          <legend class="mb-3" style="color: #5D9332;">Weight and Water Proportion</legend>
           <section>
-               <form action="">
-                    <div>
-                         <label for="gender">Gender</label>
-                         <div class="form-control dropdown">
-                              <ul class="dropdown-item">
-                                   
-                              </ul>
-                         </div>
+               <form action="" class="row">
+                    <div class="dropdown col-2">
+                         <label for="gender" required>Gender</label>
+                         <button class="btn border gender form-control text-start shadow-none" data-bs-toggle="dropdown">
+                              Select Gender
+                         </button>
+                         <ul class="dropdown-menu">
+                              <li class="gender-options"><a class="dropdown-item">Male</a></li>
+                              <li class="gender-options"><a class="dropdown-item">Female</a></li>
+                              <li class="gender-options"><a class="dropdown-item">Other</a></li>
+                         </ul>
+                    </div>
+                    <div class="col-2">
+                         <label for="weight">Weight</label>
+                         <input type="number" class="form-control shadow-none" placeholder="Enter Weight">
+                    </div>
+                    <div class="col-2">
+                         <label for="age">Age</label>
+                         <input type="number" class="form-control shadow-none" placeholder="Enter age">
+                    </div>
+                    <div class="col-2">
+                         <label></label>
+                         <button class="btn btn-danger form-control">
+                              Check
+                         </button>
                     </div>
                </form>
           </section>
@@ -470,7 +487,7 @@
 
      <!-- FAQ -->
      <section class="container mt-5" style="margin-bottom: 10rem;">
-          <legend style="color: #5D9332;">Frequently Asked Questions (FAQ)</legend>
+          <legend class="mb-3" style="color: #5D9332;">Frequently Asked Questions (FAQ)</legend>
           <div class="accordion accordion-flush" id="accord">
                <div class="accordion-item shadow rounded-3">
                     <div class="accordion-header">

@@ -41,13 +41,13 @@ if (alertTrigger) {
 }
 
 // Body and Weight Porportion
-let weightBtn = document.querySelector("#weight_btn");
-let weightCount = document.querySelectorAll(".weight_count");
+let gender = document.querySelector(".gender");
+let genderOptions = document.querySelectorAll(".gender-options");
 
-weightCount.forEach((val) => {
+genderOptions.forEach((val) => {
      val.addEventListener("click", () => {
-          let selectedWeight = val.innerText;
+          let selectedGender = val.innerText;
 
-          weightBtn.innerText = selectedWeight;
+          gender.innerText = selectedGender;
      })
 })
