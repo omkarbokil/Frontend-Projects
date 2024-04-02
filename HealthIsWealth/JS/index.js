@@ -81,6 +81,8 @@ checkWaterIntake.addEventListener("click", () => {
      if(weight.value !== null){
           let result = weight.value * 0.03;
 
+          result = result.toFixed(2);
+
           waterIntake.value = result;
      }
 })
